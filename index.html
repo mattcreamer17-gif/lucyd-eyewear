@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A read on where AI fits in Lucyd's stack. And where it does not.</title>
+<meta name="description" content="Saw the FY25 results. Armor drove half the units, 63% revenue growth, and the 10-K flags the ChatGPT integration as thin. I have a read on how a 13-person team makes voice-AI real without hiring another engineer." />
+<meta name="robots" content="noindex,nofollow" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="masthead">
+  <div class="bar">
+    <a class="logo" href="https://lucyd.co" target="_blank" rel="noopener" aria-label="Lucyd">
+      <img src="assets/logo.svg" alt="Lucyd" />
+    </a>
+    <span class="pretitle">Prepared for Innovative Eyewear, Inc. (NASDAQ: LUCY)</span>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="stamp">
+      <span class="dot" aria-hidden="true"></span>
+      <span>Booth 401 / eMerge Americas 2026</span>
+    </div>
+    <h1>A read on where AI actually fits in Lucyd's stack. And where it does not.</h1>
+    <p class="sub">For Harrison, Konrad, and Eric. A three-minute version of a three-week engagement.</p>
+    <div class="strip" role="list">
+      <span role="listitem">Audio smart eyewear</span>
+      <span role="listitem">Red Dot 2026</span>
+      <span role="listitem">ANSI Z87.1</span>
+      <span role="listitem">Miami, FL</span>
+    </div>
+  </section>
+
+  <section class="metrics" aria-label="FY2025 context">
+    <div class="metric">
+      <span class="n">+63%</span>
+      <span class="l">Revenue growth, FY2025</span>
+    </div>
+    <div class="metric">
+      <span class="n">~50%</span>
+      <span class="l">of 2025 smart-glass units from the Armor line</span>
+    </div>
+    <div class="metric">
+      <span class="n">13</span>
+      <span class="l">employees across product, sales, finance, ops</span>
+    </div>
+    <div class="metric">
+      <span class="n">$13.57M</span>
+      <span class="l">minimum licensing payments over eight years</span>
+    </div>
+  </section>
+
+  <section class="body">
+    <h2>Opening</h2>
+    <p>Armor carried half the units in 2025. Reebok Powered by Lucyd opened a new channel. Revenue grew 63%. The 10-K names the pressures honestly: China tariffs, $13.57M in minimum licensing payments, Nasdaq listing discipline, a 13-person team. The ChatGPT integration ships today through a Siri Shortcut. Reviewers have noticed. Buyers of the Armor line will notice next.</p>
+
+    <h2>How we would think about the stack</h2>
+    <p>Most of the work is not AI. Speaker drivers, firmware, the companion app, the inventory and fulfillment network, the tariff-diversification play: that is traditional code, hardware, and operations. Rule-based logic covers the voice-command tree, the Siri-Shortcut layer, the preset phrases, the pairing flow. The genuine AI layer is smaller than the marketing suggests and more interesting than the current implementation allows. It is the place where a safety-frame user logs an incident without pulling out a phone, where a technician on a shift gets a voice-native checklist tied to the job, where a retail optician gets a spoken summary of the customer's order history while they fit the frames. That is the orchestration layer. It sits above the hardware and below the enterprise buyer's workflow. Build it small, build it legible, and the "AI-enabled" claim stops being marketing and starts being a line item a compliance officer can sign off on.</p>
+
+    <div class="layers" aria-label="Layer diagram">
+      <div class="layer layer-top">
+        <span class="tag">Enterprise buyer workflow</span>
+        <span class="hint">Incident log, shift handoff, compliance report, optician POS</span>
+      </div>
+      <div class="layer layer-ai">
+        <span class="tag accent">Orchestration layer (AI)</span>
+        <span class="hint">Voice-to-intent routing, context handoff, auditable trace</span>
+      </div>
+      <div class="layer layer-rule">
+        <span class="tag">Rule-based logic</span>
+        <span class="hint">Voice-command tree, Siri Shortcut, preset phrases, pairing</span>
+      </div>
+      <div class="layer layer-code">
+        <span class="tag">Traditional code and hardware</span>
+        <span class="hint">Firmware, speaker drivers, Bluetooth, companion app, fulfillment</span>
+      </div>
+    </div>
+
+    <h2>The relevant case</h2>
+    <p>A compliance-heavy client ran a multi-agent orchestration layer over their reporting workflow. 160+ hours of manual work compressed to under 5 minutes. The client was not a big tech company. It was a small team sitting on top of a regulated process that documentation could collapse if someone drew the layer diagram correctly. The parallel to Armor in industrial safety is direct.</p>
+
+    <h2>The paper</h2>
+    <p>Interpretable Context Methodology (ICM) is the underlying argument. Agent context organized as a filesystem, auditable, reproducible, legible to a non-engineer. Published through ACM TiiS. Repo: <a href="https://github.com/RinDig/Interpretable-Context-Methodology-ICM-" target="_blank" rel="noopener">github.com/RinDig/Interpretable-Context-Methodology-ICM-</a>.</p>
+
+    <h2>Why this is a consulting engagement and not a build</h2>
+    <p>Lucyd does not need a vendor to ship a feature. Lucyd needs a three-week read on which parts of the voice-AI roadmap belong to OpenAI, which belong to the Lucyd app, which belong to a rule-based layer, and which should not be built at all. That read produces a roadmap a CFO can cost and an investor can read. Then the build, if there is one, goes to a team sized to the work (ours or a downstream partner). Eduba partners with NLP Logix for work that sits below the orchestration layer. NLP Logix has been in machine learning since 2011 and runs over 150 data scientists.</p>
+
+    <h2>Proof, in one paragraph</h2>
+    <p>1,500+ people trained across enterprise engagements since May 2025, including Correlation One deployments at Pacific Life and Colgate-Palmolive and executive cohorts at KPMG UK, one of the Big Four. Six to nine thousand hours per year saved by a workforce that still uses the tools 30 days after the workshop. Jake is a Marine veteran with an MSc in Future Governance from Edinburgh and a published methodology (ICM) now being cited in research and production work. Jake also built an online community to 22,000 members in five weeks.</p>
+  </section>
+
+  <section class="cta" id="cta">
+    <div class="cta-inner">
+      <h2 class="cta-title">30 minutes with Matt.</h2>
+      <p class="cta-sub">Booth 401, or book here. Bring one workflow from the Armor line you would like to see run hands-free.</p>
+      <a class="btn" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">Book a 30-minute call with Matt Creamer</a>
+      <p class="contact-line">Matt Creamer, CRO. <a href="mailto:theceo@eduba.io">theceo@eduba.io</a>. +1-321-745-5209.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p>Prepared by Eduba. <a href="https://eduba.io" target="_blank" rel="noopener">eduba.io</a></p>
+</footer>
+</body>
+</html>
